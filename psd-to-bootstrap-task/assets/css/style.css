@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: white;
+  color: #5c54ad;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+:root {
+  --primary-color: #5c54ad;
+  --text-color: white;
+}
+
+.artboard-section {
+  background: url("../images/background-one.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/****************************  Artboard 1 section  ****************************/
+
+.artboard1 {
+  height: 100vh;
+  max-height: 100%;
+}
+.artboard1 .logo {
+  padding: 40px 0;
+}
+.artboard1 img {
+  width: 300px;
+  max-width: 100%;
+}
+.artboard1 p,
+.text-part p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  width: 335px;
+  max-width: 100%;
+  padding: 6px 0;
+}
+
+.fa,
+.fas {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-top: 40px;
+}
+
+/****************************  Artboard 2 section  ****************************/
+
+.artboard2-section {
+  background: url("../images/bg-two.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.artboard2 {
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.artboard2 .images-part .image {
+  border: 1px dashed white;
+  border-radius: 50%;
+  margin: 8px 0;
+}
+
+.artboard2 .images-part img {
+  width: 170px;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+/****************************  Artboard 3 section  ****************************/
+.artboard3 {
+  margin: 150px auto;
+}
+
+.mobile img {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 35px;
+  box-shadow: 0 30px 16px rgba(0, 0, 0, 0.4);
+}
+
+.form-content {
+  margin-left: 140px;
+}
+.form-content h2 {
+  padding: 5px 0;
+  color: rgb(172, 172, 172);
+  font-weight: lighter;
+}
+.form-content option {
+  font-weight: lighter;
+}
+.form-content input,
+.form-content select {
+  width: 480px;
+  max-width: 100%;
+  height: 45px;
+  background-color: rgb(216, 216, 216);
+  color: lightgray;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.form-content select {
+  color: gray;
+}
+.form-content label {
+  color: gray;
+}
+.form-content input:focus,
+.form-content select:focus {
+  box-shadow: none;
+  border: 1px solid var(--primary-color);
+  background-color: lightgray;
+  color: gray;
+}
+
+.form-content button {
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 3px 20px;
+  border-radius: 20px;
+  margin: 20px 0;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+}
+.form-content button:hover {
+  color: white;
+}
+.form-content button:focus {
+  box-shadow: none;
+}
+
+/****************************  Footer  ****************************/
+
+.footer {
+  background-color: var(--primary-color);
+  text-align: center;
+}
+.footer p {
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 15px 0;
+  margin-bottom: 0;
+}
+
+/****************************  media queries  ****************************/
+
+@media only screen and (max-width: 990px) {
+  .artboard3 {
+    margin: 100px auto;
+  }
+  .form-content {
+    margin: 80px 0;
+  }
+}
+
+@media only screen and (max-width: 776px) {
+  .artboard3 {
+    margin: 100px auto;
+  }
+  .form-content {
+    margin: 60px 0;
+  }
+  .artboard1 p,
+  .text-part p {
+    font-size: 1.1rem;
+  }
+  .artboard2 .images-part {
+    margin: 0 8px;
+  }
+  .artboard3 {
+    padding: 0 20px;
+  }
+
+  .text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .artboard1 {
+    height: auto;
+    padding: 50px 0;
+  }
+  .artboard1 {
+    padding: 70px 10px;
+  }
+  .artboard1 p,
+  .text-part p {
+    line-height: 1.4;
+    width: 100%;
+  }
+  .artboard2 .images-part {
+    margin: 0 4px;
+  }
+  .artboard3 {
+    margin: 70px 20px;
+  }
+  .mobile img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 35px;
+  }
+  .text-part {
+    padding-top: 40px;
+  }
+
+  .form-content {
+    margin-left: 0;
+    width: 100%;
+  }
+  .form-content input,
+  .form-content select {
+    width: 100%;
+    height: 36px;
+    font-size: 15px;
+  }
+  .artboard2 .images-part img {
+    width: 150px;
+    max-width: 100%;
+    margin: 10px;
+  }
+  .artboard3 {
+    margin: 70px 0px;
+    padding: 0;
+  }
+  .fa,
+  .fas {
+    display: none !important;
+  }
+
+  .artboard2 .images-part .image {
+    border: none;
+  }
+
+  .form-content h2,
+  .form-content .button {
+    display: flex;
+    justify-content: center;
+  }
+  .form-btn {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .mobile img {
+    border-radius: 25px;
+  }
+}
