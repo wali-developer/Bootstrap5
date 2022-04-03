@@ -22,6 +22,7 @@
       src="https://kit.fontawesome.com/8441000675.js"
       crossorigin="anonymous"
     ></script>
+
   </head>
   <body>
     <!--------------------------- Header ---------------------------->
@@ -66,7 +67,7 @@
                 </li>
               </ul>
               <!-- <div class="d-flex"> -->
-              <button class="primary-button" type="submit">Let's Talk</button>
+              <button class="primary-button">Let's Talk</button>
               <!-- </div> -->
             </div>
           </div>
@@ -169,6 +170,733 @@
       </div>
     </div>
 
+    <!--------------------------- Projects ---------------------------->
+    <div class="projects">
+      <div class="container">
+        <h1>Latest Projects I've Done</h2>
+        <div class="projects-menu">
+          <ul>
+            <li onclick="handleClick(event, 'all')" class="tablinks active">View all</li>
+            <li onclick="handleClick(event, 'design')" class="tablinks">Design</li>
+            <li onclick="handleClick(event, 'development')" class="tablinks">Development</li>
+            <li onclick="handleClick(event, 'branding')" class="tablinks">Branding</li>
+            <li onclick="handleClick(event, 'photocopy')" class="tablinks">Photocopy</li>
+            <li onclick="handleClick(event, 'marketing')" class="tablinks">Marketing</li>
+          </ul>
+        </div>
+        <div class="flip-cards tabcontent allProjects" id="all">
+          <div class="row flipCardRow ">
+            <div class="col-12 col-md-6 flipCardCol">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project1.png"
+                      alt="Project-1 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Graphic <br> Design</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project2.png"
+                      alt="Project-2 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Mockup <br> & Branding</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row flipCardRow ">
+            <div class="col-12 col-md-6 flipCardCol">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project3.png"
+                      alt="Project-3 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Creative <br> Shows</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project4.png"
+                      alt="Project-4 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Design <br> Branding</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flip-cards tabcontent" id="design">
+          <div class="row flipCardRow ">
+            <div class="col-12 col-md-6 flipCardCol">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project3.png"
+                      alt="Project-1 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Graphic <br> Design</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project4.png"
+                      alt="Project-2 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Mockup <br> & Branding</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="development">
+          <div class="row flipCardRow ">
+            <div class="col-12 col-md-6 flipCardCol">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project1.png"
+                      alt="Project-1 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Graphic <br> Design</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project2.png"
+                      alt="Project-2 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Mockup <br> & Branding</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="branding">
+          <div class="row flipCardRow ">
+            <div class="col-12 col-md-6 flipCardCol">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project2.png"
+                      alt="Project-1 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Graphic <br> Design</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project3.png"
+                      alt="Project-2 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Mockup <br> & Branding</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="photocopy">
+          <div class="row flipCardRow ">
+            <div class="col-12 col-md-6 flipCardCol">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project1.png"
+                      alt="Project-1 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Graphic <br> Design</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project4.png"
+                      alt="Project-2 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Mockup <br> & Branding</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="marketing">
+          <div class="row flipCardRow ">
+            <div class="col-12 col-md-6 flipCardCol">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project3.png"
+                      alt="Project-1 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Graphic <br> Design</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/project2.png"
+                      alt="Project-2 Image"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div
+                    class="flip-card-back d-flex flex-column justify-content-center"
+                  >
+                    <h4>Mockup <br> & Branding</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!--------------------------- Skills and Experience ---------------------------->
+
+    <section class="skills-section">
+      <div class="container">
+        <div class="row skillsRow">
+          <div class="col-12 col-md-6 skillRowCol1">
+            <h2>Creative and Professional <br> Skills Experience</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+            <button class="primary-button getProject-btn">Get Any Projects</button>
+          </div>
+          <div class="col-12 col-md-6 skillRowCol2">
+            <div class="skillContainer">
+              <div class="d-flex flex-row justify-content-between skillContent">
+                <span>Design and Branding</span>
+                <span>79%</span>
+              </div>
+              <div class="skill-bg">
+                <div class="skills design-branding"></div>
+              </div>
+            </div>
+
+            <div class="skillContainer">
+              <div class="d-flex flex-row justify-content-between skillContent">
+                <span>Web Development</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bg">
+                <div class="skills web"></div>
+              </div>
+            </div>
+
+            <div class="skillContainer">
+              <div class="d-flex flex-row justify-content-between skillContent">
+                <span>Business Strategy</span>
+                <span>73%</span>
+              </div>
+              <div class="skill-bg">
+                <div class="skills bs"></div>
+              </div>
+            </div>
+
+            <div class="skillContainer">
+              <div class="d-flex flex-row justify-content-between skillContent">
+                <span>Photography</span>
+                <span>83%</span>
+              </div>
+              <div class="skill-bg">
+                <div class="skills photography"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------- Career numbers ---------------------------->
+
+    <div class="career-numbers">
+      <div class="container">
+        <div class="row careerNumbersRow">
+          <div class="col-6 col-md-3 careerCol">
+            <span class="number">320+</span> <br>
+            <span class="number-name">Projects Done</span>
+          </div>
+          <div class="col-6 col-md-3 careerCol">
+            <span class="number">563+</span> <br>
+            <span class="number-name">Satisfied Clients</span>
+          </div>
+          <div class="col-6 col-md-3 careerCol">
+            <span class="number">896+</span> <br>
+            <span class="number-name">Awards Winning</span>
+          </div>
+          <div class="col-6 col-md-3 careerCol">
+            <span class="number achivement">Great Achivement In My Career</span> <br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------- Client Reviews ---------------------------->
+
+    <div class="reviews">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="reviews-heading">My Client Reviews Speaks</h1>
+          </div>
+        </div>
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row ReviewsRow">
+                <div class="col-12 col-md-4 ReviewsRowCol">
+                  <div class="review-card">
+                    <div class="review-card-img">
+                      <img src="./images/client.png" alt="Review-1 Image" class="img-fluid" />
+                    </div>
+                    <div class="review-card-content">
+                      <h4>Matilda</h4>
+                      <h6>Photographer</h6>
+                      <p>Super quality! Quick delivery. Wornerful packing. Thank you and Always going good.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 ReviewsRowCol">
+                  <div class="review-card">
+                    <div class="review-card-img">
+                      <img src="./images/client.png" alt="Review-1 Image" class="img-fluid" />
+                    </div>
+                    <div class="review-card-content">
+                      <h4>Matilda</h4>
+                      <h6>Photographer</h6>
+                      <p>Super quality! Quick delivery. Wornerful packing. Thank you and Always going good.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 ReviewsRowCol">
+                  <div class="review-card">
+                    <div class="review-card-img">
+                      <img src="./images/client.png" alt="Review-1 Image" class="img-fluid" />
+                    </div>
+                    <div class="review-card-content">
+                      <h4>Matilda</h4>
+                      <h6>Photographer</h6>
+                      <p>Super quality! Quick delivery. Wornerful packing. Thank you and Always going good.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row ReviewsRow">
+                <div class="col-12 col-md-4 ReviewsRowCol">
+                  <div class="review-card">
+                    <div class="review-card-img">
+                      <img src="./images/client.png" alt="Review-1 Image" class="img-fluid" />
+                    </div>
+                    <div class="review-card-content">
+                      <h4>Matilda</h4>
+                      <h6>Photographer</h6>
+                      <p>Super quality! Quick delivery. Wornerful packing. Thank you and Always going good.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 ReviewsRowCol">
+                  <div class="review-card">
+                    <div class="review-card-img">
+                      <img src="./images/client.png" alt="Review-1 Image" class="img-fluid" />
+                    </div>
+                    <div class="review-card-content">
+                      <h4>Matilda</h4>
+                      <h6>Photographer</h6>
+                      <p>Super quality! Quick delivery. Wornerful packing. Thank you and Always going good.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 ReviewsRowCol">
+                  <div class="review-card">
+                    <div class="review-card-img">
+                      <img src="./images/client.png" alt="Review-1 Image" class="img-fluid" />
+                    </div>
+                    <div class="review-card-content">
+                      <h4>Matilda</h4>
+                      <h6>Photographer</h6>
+                      <p>Super quality! Quick delivery. Wornerful packing. Thank you and Always going good.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row ReviewsRow">
+                <div class="col-12 col-md-4 ReviewsRowCol">
+                  <div class="review-card">
+                    <div class="review-card-img">
+                      <img src="./images/client.png" alt="Review-1 Image" class="img-fluid" />
+                    </div>
+                    <div class="review-card-content">
+                      <h4>Matilda</h4>
+                      <h6>Photographer</h6>
+                      <p>Super quality! Quick delivery. Wornerful packing. Thank you and Always going good.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 ReviewsRowCol">
+                  <div class="review-card">
+                    <div class="review-card-img">
+                      <img src="./images/client.png" alt="Review-1 Image" class="img-fluid" />
+                    </div>
+                    <div class="review-card-content">
+                      <h4>Matilda</h4>
+                      <h6>Photographer</h6>
+                      <p>Super quality! Quick delivery. Wornerful packing. Thank you and Always going good.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 ReviewsRowCol">
+                  <div class="review-card">
+                    <div class="review-card-img">
+                      <img src="./images/client.png" alt="Review-1 Image" class="img-fluid" />
+                    </div>
+                    <div class="review-card-content">
+                      <h4>Matilda</h4>
+                      <h6>Photographer</h6>
+                      <p>Super quality! Quick delivery. Wornerful packing. Thank you and Always going good.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-btns">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+              <!-- <span class="carousel-control-prev-icon " aria-hidden="true"></span> -->
+              <!-- <span class="visually-hidden">Previous</span> -->
+              <i class="fas fa-angle-left"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+              <i class="fas fa-angle-right"></i>
+              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+              <!-- <span class="visually-hidden">Next</span> -->
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------- News & Blogs ---------------------------->
+
+    <div class="blogs">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="blog-heading">Every Single Update News and Blog</h1>
+          </div>
+        </div>
+        <div class="row blogsRow gx-0">
+          <div class="col-12 col-md-4 blogsRowCol">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="./images/blog1.png" alt="blog-1 Image" class="img-fluid" />
+              </div>
+              <div class="blog-card-content">
+                <h5>Designer focuses on creation & implementation</h5>
+                <h6>25 March 2021</h6>
+                <button class="primary-button read-more">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 blogsRowCol">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="./images/blog2.png" alt="blog-2 Image" class="img-fluid" />
+              </div>
+              <div class="blog-card-content">
+                <h5>Make a free website with out free website builder</h4>
+                <h6>11 March 2021</h6>
+                <button class="primary-button read-more">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 blogsRowCol">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="./images/blog3.png" alt="blog-3 Image" class="img-fluid" />
+              </div>
+              <div class="blog-card-content">
+                <h5>Creating brand identity & extablishes consistency</h4>
+                <h6>2 April 2021</h6>
+                <button class="primary-button read-more">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!--------------------------- astusx logos ---------------------------->
+
+    <div class="astusx-logos">
+      <div class="container">
+        <div class="row astusxRow">
+          <div class="col-12 col-sm-6 col-md-3 astusxRowCol">
+            <div class="astusx-img">
+              <img src="./images/astusx.png" alt="astusx-logo 1" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6  col-md-3 astusxRowCol">
+            <div class="astusx-img">
+              <img src="./images/astusx1.png" alt="astusx-logo 1" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6  col-md-3 astusxRowCol">
+            <div class="astusx-img">
+              <img src="./images/astusx2.png" alt="astusx-logo 1" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6  col-md-3 astusxRowCol">
+            <div class="astusx-img">
+              <img src="./images/astusx3.png" alt="astusx-logo 1" class="img-fluid" />
+            </div>
+          </div>
+      </div>
+        <div class="row astusxRow">
+          <div class="col-12 col-sm-6 col-md-3 astusxRowCol">
+            <div class="astusx-img">
+              <img src="./images/astusx4.png" alt="astusx-logo 1" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6  col-md-3 astusxRowCol">
+            <div class="astusx-img">
+              <img src="./images/astusx5.png" alt="astusx-logo 1" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6  col-md-3 astusxRowCol">
+            <div class="astusx-img">
+              <img src="./images/astusx6.png" alt="astusx-logo 1" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6  col-md-3 astusxRowCol">
+            <div class="astusx-img">
+              <img src="./images/astusx7.png" alt="astusx-logo 1" class="img-fluid" />
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!--------------------------- contact ---------------------------->
+
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="contact-heading">Have Any Project Please Say Hi! I don’t bite ; )</h1>
+          </div>
+        </div>
+        <form class="form">
+          <div class="row formRow">
+            <div class="col-12 col-md-3">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-12 col-md-3">
+              <input type="email" class="form-control" placeholder="Email address">
+            </div>
+            <div class="col-12 col-md-3">
+              <input type="text" class="form-control" placeholder="Message">
+            </div>
+            <div class="col-12 col-md-3">
+              <button type="submit" class="primary-button sendMessage">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--------------------------- Footer ---------------------------->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row footerRow">
+          <div class="col-12 col-md-3 footerCol1">
+            <div class="column">
+              <h5>Swiss LP</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 footerCol2">
+            <div class="column">
+              <h5>Services</h5>
+              <ul><li>Web Design</li>
+              <li>Graphic Design</li>
+              <li>Web Development</li>
+              <li>Digital Marketing</li>
+              <li>IT Consulting</li>
+              <li>Co Working</li></ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 footerCol3">
+            <div class="column">
+              <h5>News Letter</h5>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+              <input type="text" class="form-control" placeholder="email@domain.com">
+              <button type="submit" class="primary-button sendMessage">Send Message</button>
+          </div>
+          </div>
+          <div class="col-12 col-md-3 footerCol4">
+            <div class="column">
+              <h5>Photo Gallery</h5>
+              <div class="row GalleryRow gx-0">
+                <div class="col-12 col-sm-6 col-md-6 galleryImageCol p-2">
+                  <img src="./images/pic1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 galleryImageCol p-2">
+                  <img src="./images/pic2.png" alt=""  class="img-fluid">
+                </div>
+              </div>
+              <div class="row GalleryRow gx-0">
+                <div class="col-12 col-sm-6 col-md-6 galleryImageCol p-2">
+                  <img src="./images/pic3.png" alt=""  class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 galleryImageCol p-2">
+                  <img src="images/pic4.png" alt=""  class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="mini-footer">
+          <div class="row copyrightRow gx-0">
+            <div class="col-12 col-md-12 col-lg-6">
+              <p>2022, All rights reserved. Designed by www.swisslp.com</p>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6">
+              <ul>
+                <li>Membership</li>
+                <li>Purchase Guide</li>
+                <li>Privacy Policy</li>
+                <li>Terms of services</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!---------------------------  Popper cdn ---------------------------->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -182,5 +910,15 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <!---------------------------  JQuery cdn ---------------------------->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+
+  <!---------------------------  Javascript ---------------------------->
+  <script src="./js/script.js"> </script>
   </body>
 </html>

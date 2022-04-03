@@ -30,16 +30,6 @@ select:focus {
   outline: none;
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.navbar-brand {
-  font-family: "Roboto Slab", serif;
-} */
-
 :root {
   --primary-color: #ff5041;
   --text-color: #000000;
@@ -54,7 +44,6 @@ a {
 /* ------------------------------- Header Navigation bar ------------------------------------ */
 
 .Header-container {
-  /* background: #f6f8fa; */
   background: url("/images/header-bg.svg");
   background-size: cover;
   background-position: center;
@@ -65,8 +54,8 @@ a {
 }
 .navbar-brand {
   color: black;
-  font-weight: 600;
-  font-size: 22px;
+  font-weight: 800;
+  font-size: 27px;
 }
 .navbar-light .navbar-toggler {
   border: 1px solid var(--primary-color);
@@ -85,7 +74,7 @@ a {
 }
 #navbarSupportedContent ul li {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
   padding: 0 5px;
 }
 #navbarSupportedContent ul li a {
@@ -224,8 +213,401 @@ a {
   padding: 9px 25px;
 }
 
-/* ------------------------------ Responsive media queries ------------------------------ */
+/* ------------------------------------ Projects ------------------------------------- */
 
+.projects {
+  background-color: #fafbfc;
+  padding-top: 40px;
+}
+.projects h1 {
+  font-weight: 600;
+  margin: 50px 0;
+}
+.projects-menu {
+  margin: 20px 0;
+}
+.projects-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-left: -20px;
+  padding: 20px 0;
+}
+.projects-menu ul li {
+  padding: 0 25px;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+.projects-menu ul li:hover {
+  color: var(--primary-color);
+}
+
+/* tabs  */
+
+.projects-menu ul li.active {
+  color: var(--primary-color);
+}
+.tabcontent {
+  display: none;
+}
+.allProjects {
+  display: block;
+}
+
+/* tabs  */
+
+.flipCardRow {
+  margin: 30px auto;
+}
+.flipCardCol {
+  margin-bottom: 40px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 460px;
+  max-width: 100%;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: lightgray;
+  color: black;
+  transform: rotateY(180deg);
+}
+.flip-card-back h4 {
+  font-weight: 600;
+}
+
+/* ------------------------------ Skills and Experience ------------------------------ */
+
+.skills-section {
+  margin: 80px 0;
+}
+.skills-section h2 {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.skills-section p {
+  font-weight: 500;
+  margin: 25px 0;
+}
+.getProject-btn {
+  padding: 8px 25px;
+  font-size: 13px;
+}
+
+.skillContainer {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 35px;
+}
+
+.skillContainer .skillContent {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.skillContainer .skill-bg {
+  background-color: rgb(228, 228, 228);
+}
+
+.skills {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+}
+
+.design-branding {
+  width: 79%;
+  background-color: var(--primary-color);
+}
+.web {
+  width: 95%;
+}
+.bs {
+  width: 73%;
+}
+.photography {
+  width: 83%;
+}
+
+/* ------------------------------ Career Numbers ------------------------------ */
+
+.career-numbers {
+  margin: 100px 0;
+}
+.careerCol .number {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.careerCol .number-name {
+  font-weight: 600;
+  text-align: center;
+  font-size: 13px;
+}
+.careerCol .achivement {
+  font-size: 32px;
+}
+
+/* ------------------------------ Client Reviews ------------------------------ */
+
+.reviews {
+  background-color: #fafbfc;
+  padding: 80px 0;
+}
+.reviews-heading,
+.contact-heading {
+  font-weight: 600;
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.ReviewsRow,
+.blogsRow {
+  margin: 50px 0;
+}
+.ReviewsRowCol {
+  padding: 0 10px;
+}
+.review-card {
+  background-color: #fff;
+  padding: 20px 30px 70px 30px;
+  border-radius: 5px;
+}
+.review-card-img {
+  padding: 20px 0;
+}
+.review-card-img img {
+  width: 70px;
+  height: 70px;
+}
+.review-card-content {
+  padding: 0 15px;
+}
+.review-card-content h5 {
+  font-weight: 500;
+}
+
+.review-card-content h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+}
+.carousel-btns {
+  margin-left: 7px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  background-color: white !important;
+  position: static;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  display: inline-block;
+  width: 40px;
+  padding: 0;
+  color: #000000 !important;
+  text-align: unset;
+  background: 0;
+  border: 0;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+  text-align: center;
+  margin: 0 3px;
+  border-radius: 2px;
+}
+.carousel-control-next .fas,
+.carousel-control-prev .fas {
+  color: var(--primary-color) !important;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+/* ------------------------------ Blogs & News ------------------------------ */
+
+.blogs {
+  padding: 80px 0;
+}
+.blog-heading {
+  font-weight: 600;
+  width: 350px;
+  max-width: 100%;
+}
+.blogsRow {
+  margin: 40px auto;
+}
+.blog-card {
+  width: 96%;
+  max-width: 100%;
+}
+.blog-card-content {
+  padding: 40px;
+  box-shadow: 0 0 20px 0 rgba(173, 173, 173, 0.2);
+}
+.blog-card-content h5 {
+  font-weight: 600;
+}
+.blog-card-content h6 {
+  font-size: 13px;
+  margin: 10px 0 35px 0;
+}
+
+.read-more {
+  font-size: 13px;
+  padding: 8px 30px;
+}
+
+/* ------------------------------ Astusx logos ------------------------------ */
+
+.astusx-logos {
+  margin: 30px 0;
+}
+.astusxRow {
+  margin: 0 auto;
+}
+.astusx-img {
+  width: 50%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.astusxRowCol {
+  padding: 25px 0;
+}
+
+/* ------------------------------ contact ------------------------------ */
+
+.contact {
+  margin-top: 60px;
+  padding: 80px 0;
+  background-color: #f6f8fa;
+}
+.contact-heading {
+  width: 400px;
+  max-width: 100%;
+}
+.form {
+  margin: 50px 20px 30px 20px;
+}
+.form .sendMessage {
+  padding: 8px 25px;
+  width: 100%;
+  font-size: 13px;
+}
+.formRow input {
+  border: none;
+  font-weight: 500;
+  color: black;
+  padding: 8px 13px;
+  width: 100%;
+}
+.formRow input:focus {
+  box-shadow: none;
+}
+
+/* ------------------------------ Footer ------------------------------ */
+
+.footer {
+  margin: 25px 0;
+}
+.footerRow {
+  margin: 0 auto;
+}
+.column {
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.column h5 {
+  font-weight: 700;
+  padding: 20px 0;
+}
+.column p {
+  font-weight: 500;
+}
+.footerCol2 ul {
+  margin-left: -3px;
+}
+.footerCol2 ul li {
+  font-weight: 500;
+  margin: 15px 0;
+}
+.footerCol3 input {
+  font-size: 13px;
+  padding: 8px 10px;
+  margin: 8px 0;
+}
+.footerCol3 input:focus {
+  box-shadow: none;
+}
+.footerCol3 .sendMessage {
+  font-size: 11px;
+  padding: 8px 30px;
+}
+.footerCol4 {
+  padding-left: 30px;
+}
+.mini-footer {
+  margin-top: 80px;
+}
+.copyrightRow {
+  padding: 0 22px;
+}
+.copyrightRow p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.copyrightRow ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.copyrightRow ul li {
+  padding: 0 0 0 30px;
+  display: inline-block;
+  font-weight: 500;
+}
+.copyrightRow ul li:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* ------------------------------ Responsive media queries ------------------------------ */
 @media (min-width: 1500px) {
   .container,
   .container-lg,
@@ -259,6 +641,28 @@ a {
   .servicesRow .service-item {
     margin: 20px 50px;
   }
+  .careerCol .number {
+    font-size: 30px;
+  }
+  .careerCol .achivement {
+    font-size: 25px;
+  }
+  .footerCol2 ul li {
+    margin: 8px 0;
+  }
+  .footerCol2 ul {
+    margin-left: -10px;
+  }
+  .copyrightRow {
+    padding: 0;
+    text-align: center;
+  }
+  .copyrightRow ul li {
+    padding: 0 20px;
+  }
+  .copyrightRow ul {
+    justify-content: center;
+  }
 }
 
 /* ------------------- Less than 776px width -------------------- */
@@ -273,6 +677,9 @@ a {
   .header-left {
     margin-bottom: 50px;
   }
+  .aboutUs {
+    margin: 60px 0;
+  }
   .aboutRowCol2 {
     margin: 50px auto;
     padding: 0 15px;
@@ -281,4 +688,96 @@ a {
     font-size: 25px;
     font-weight: 800;
   }
+
+  .projects-menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    padding: 0 0;
+  }
+  .projects-menu ul li {
+    padding: 10px 0;
+  }
+  .projects h1 {
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .flip-card {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+  }
+  .skills-section {
+    margin: 80px 10px;
+  }
+  .skillRowCol1 {
+    margin: 30px 0 50px 0;
+  }
+  .careerCol .number {
+    font-size: 28px;
+  }
+  .careerCol .achivement {
+    font-size: 25px;
+  }
+  .career-numbers {
+    margin: 80px 10px;
+  }
+  .careerCol {
+    margin: 20px 0;
+  }
+  .ReviewsRowCol {
+    padding: 20px 10px;
+  }
+
+  .blogs {
+    padding: 80px 10px 10px 10px;
+  }
+
+  .blogsRowCol {
+    margin: 20px 0;
+  }
+  .blog-card {
+    width: 100%;
+  }
+  .contact {
+    padding: 50px 0;
+  }
+  .formRow input,
+  .form .sendMessage {
+    margin: 8px 0;
+  }
+  .form {
+    margin: 50px 10px 30px 10px;
+  }
+  .column h5 {
+    padding: 10px 0;
+  }
+  .column {
+    margin: 15px 0;
+  }
+  .footerCol4 {
+    padding-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .column {
+    width: 100%;
+  }
+  .footerCol3 input {
+    margin: 15px 0;
+  }
+  .copyrightRow ul {
+    display: block;
+  }
+  .copyrightRow ul li {
+    padding: 0 12px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
 }
