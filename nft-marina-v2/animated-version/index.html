@@ -1,0 +1,3174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Marina</title>
+
+    <!-- bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- AOS stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <!-- Navbar -->
+      <div class="Navbar-section">
+        <div class="headerContainer">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a
+                class="navbar-brand"
+                href="#"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+                >NFT <span class="brand-special">Marina</span>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span><i class="fas fa-bars navbar-toggler-icon"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="homeDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Home
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#explore"
+                      id="exploreDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Explore
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#">Collectibles</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Trending Cards</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Domain Names</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#auctions">Activity</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#sellers"
+                      id="communityDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Community
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="communityDropdown"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Virtual Worlds</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Utility</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Domain Names</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#popularCollection"
+                      id="pagesDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#">Collectibles</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Trending Cards</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Sports</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Contact</a>
+                  </li>
+                </ul>
+                <div class="d-flex flex-row align-items-center navbar-buttons">
+                  <button
+                    class="btn primary-button commWallet"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#registrationModal"
+                  >
+                    Contact Wallet
+                  </button>
+                  <div class="box">
+                    <input type="checkbox" id="check" />
+                    <div class="search-box">
+                      <input type="text" placeholder="Type here..." />
+                      <label for="check" class="icon">
+                        <i class="fas fa-search"></i>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <div class="header-section">
+        <div class="headerContainer">
+          <div class="row headerRow d-flex align-items-center">
+            <div
+              class="col-12 col-md-6 headerCol1"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <h1>
+                Buy and Sell <br />
+                digital art, <br />
+                <span class="linear-heading">NFTs collection</span>
+              </h1>
+              <p>
+                find exclusive digital artwork. collect digital artwork made by
+                amazing people. make money by doing something you passionate.
+              </p>
+              <div class="header-buttons d-flex flex-row align-items-center">
+                <button
+                  class="primary-button getStarted"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#getStarted"
+                >
+                  Get Started
+                </button>
+                <button class="primary-button create">Create</button>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 headerCol2"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
+              <div class="imagesContainer">
+                <div class="row imagesRow gx-2 mt-2">
+                  <div class="col-4 col-md-4 imagesCol">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="picture1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-4 col-md-4 imagesCol imagesCol2">
+                    <img
+                      src="assets/images/pic2.png"
+                      alt="picture1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-4 col-md-4 imagesCol imagesCol3">
+                    <img
+                      src="assets/images/pic3.png"
+                      alt="picture3"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="row imagesRow gx-2 mt-2">
+                  <div class="col-4 col-md-4 imagesCol">
+                    <img
+                      src="assets/images/pic4.png"
+                      alt="picture1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-4 col-md-4 imagesCol imagesCol2">
+                    <img
+                      src="assets/images/pic5.png"
+                      alt="picture1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-4 col-md-4 imagesCol imagesCol3">
+                    <img
+                      src="assets/images/pic6.png"
+                      alt="picture3"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="row imagesRow gx-2 mt-2">
+                  <div class="col-4 col-md-4 imagesCol">
+                    <img
+                      src="assets/images/pic7.png"
+                      alt="picture1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-4 col-md-4 imagesCol imagesCol2">
+                    <img
+                      src="assets/images/pic8.png"
+                      alt="picture1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-4 col-md-4 imagesCol imagesCol3">
+                    <img
+                      src="assets/images/pic9.png"
+                      alt="picture3"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Get Started Form Model -->
+    <div
+      class="modal fade"
+      id="getStarted"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body modelBody">
+              <h4 class="modal-title" id="staticBackdropLabel">
+                Create Account
+              </h4>
+              <form class="registration-form">
+                <div class="mb-3">
+                  <label for="exampleInputName" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputName"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail" class="form-label"
+                    >Email or Phone</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputConfirmPass" class="form-label"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputConfirmPass"
+                  />
+                </div>
+                <p class="form-para">
+                  By signing up, you agree to the
+                  <span>terms of services</span> and <span>privacy policy</span>
+                </p>
+                <button
+                  type="submit"
+                  class="btn primary-button register-button"
+                >
+                  Register
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Live Auctions -->
+    <div class="auctions-section" id="auctions">
+      <div class="secContainer">
+        <h6 class="sec-small-heading">Auctions</h6>
+        <h1 class="sec-heading">Live Auctions</h1>
+        <div class="auctions-content">
+          <div class="row auctionsRow mb-lg-4">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="auctions-card"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="auctions-card-img">
+                  <img
+                    src="assets/images/auction1.png"
+                    alt="auction1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span id="hours"></span>
+                    <span id="mins"></span>
+                    <span id="secs"></span>
+                  </span>
+                </div>
+                <div class="auctions-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div class="card-user">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="profile"
+                      class="img-fluid"
+                    />
+                    <span>@banuri</span>
+                  </div>
+                  <div class="price d-flex flex-row justify-content-between">
+                    <span>Price</span>
+                    <span>5.4 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="auctions-card"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                <div class="auctions-card-img">
+                  <img
+                    src="assets/images/auction2.png"
+                    alt="auction1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="auctions-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Virtual Worlds</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div class="card-user">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="profile"
+                      class="img-fluid"
+                    />
+                    <span>@banuri</span>
+                  </div>
+                  <div class="price d-flex flex-row justify-content-between">
+                    <span>Price</span>
+                    <span>5.4 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="auctions-card"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                <div class="auctions-card-img">
+                  <img
+                    src="assets/images/auction3.png"
+                    alt="auction1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="auctions-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Music</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div class="card-user">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="profile"
+                      class="img-fluid"
+                    />
+                    <span>@banuri</span>
+                  </div>
+                  <div class="price d-flex flex-row justify-content-between">
+                    <span>Price</span>
+                    <span>5.4 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="auctions-card"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="auctions-card-img">
+                  <img
+                    src="assets/images/auction4.png"
+                    alt="auction1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="auctions-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div class="card-user">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="profile"
+                      class="img-fluid"
+                    />
+                    <span>@banuri</span>
+                  </div>
+                  <div class="price d-flex flex-row justify-content-between">
+                    <span>Price</span>
+                    <span>5.4 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row auctionsRow mb-2">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="auctions-card"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="auctions-card-img">
+                  <img
+                    src="assets/images/auction5.png"
+                    alt="auction1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="auctions-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Domain Names</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div class="card-user">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="profile"
+                      class="img-fluid"
+                    />
+                    <span>@banuri</span>
+                  </div>
+                  <div class="price d-flex flex-row justify-content-between">
+                    <span>Price</span>
+                    <span>5.4 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="auctions-card"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                <div class="auctions-card-img">
+                  <img
+                    src="assets/images/auction6.png"
+                    alt="auction1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="auctions-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div class="card-user">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="profile"
+                      class="img-fluid"
+                    />
+                    <span>@banuri</span>
+                  </div>
+                  <div class="price d-flex flex-row justify-content-between">
+                    <span>Price</span>
+                    <span>5.4 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="auctions-card"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                <div class="auctions-card-img">
+                  <img
+                    src="assets/images/auction7.png"
+                    alt="auction1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="auctions-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Trading Cards</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div class="card-user">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="profile"
+                      class="img-fluid"
+                    />
+                    <span>@banuri</span>
+                  </div>
+                  <div class="price d-flex flex-row justify-content-between">
+                    <span>Price</span>
+                    <span>5.4 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="auctions-card"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="auctions-card-img">
+                  <img
+                    src="assets/images/auction8.png"
+                    alt="auction1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="auctions-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Sports</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div class="card-user">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="profile"
+                      class="img-fluid"
+                    />
+                    <span>@banuri</span>
+                  </div>
+                  <div class="price d-flex flex-row justify-content-between">
+                    <span>Price</span>
+                    <span>5.4 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sec-button-cont">
+            <button class="primary-button sectionBtn">Explore More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sellers / Creators  -->
+    <div class="sellers-section" id="sellers">
+      <div class="secContainer">
+        <h6 class="sec-small-heading">Creators</h6>
+        <h1 class="sec-heading">Top Sellers</h1>
+        <div class="sellers-cards-content">
+          <div class="row sellersRow mb-md-4">
+            <div class="col-12 col-md-4">
+              <div
+                class="sellerCard"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="row sellerCard-innerRow">
+                  <div
+                    class="col-12 col-sm-9 innerCol1 d-flex flex-row align-items-center"
+                  >
+                    <img
+                      src="assets/images/seller.png"
+                      class="img-fluid"
+                      alt="Seller"
+                    />
+                    <div class="aboutSeller">
+                      <h6>James Tonny</h6>
+                      <h6>2.65 ETH</h6>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-3 innerCol2">
+                    <span class="items-numbers">62</span> <br />
+                    <span>items</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div
+                class="sellerCard"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="row sellerCard-innerRow">
+                  <div
+                    class="col-12 col-sm-9 innerCol1 d-flex flex-row align-items-center"
+                  >
+                    <img
+                      src="assets/images/seller.png"
+                      class="img-fluid"
+                      alt="Seller"
+                    />
+                    <div class="aboutSeller">
+                      <h6>Buri maa</h6>
+                      <h6>2.65 ETH</h6>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-3 innerCol2">
+                    <span class="items-numbers">129</span> <br />
+                    <span>items</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div
+                class="sellerCard"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="row sellerCard-innerRow">
+                  <div
+                    class="col-12 col-sm-9 innerCol1 d-flex flex-row align-items-center"
+                  >
+                    <img
+                      src="assets/images/seller.png"
+                      class="img-fluid"
+                      alt="Seller"
+                    />
+                    <div class="aboutSeller">
+                      <h6>James unny</h6>
+                      <h6>2.65 ETH</h6>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-3 innerCol2">
+                    <span class="items-numbers">28</span> <br />
+                    <span>items</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row sellersRow mb-4">
+            <div class="col-12 col-md-4">
+              <div
+                class="sellerCard"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="row sellerCard-innerRow">
+                  <div
+                    class="col-12 col-sm-9 innerCol1 d-flex flex-row align-items-center"
+                  >
+                    <img
+                      src="assets/images/seller.png"
+                      class="img-fluid"
+                      alt="Seller"
+                    />
+                    <div class="aboutSeller">
+                      <h6>James Tonny</h6>
+                      <h6>2.65 ETH</h6>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-3 innerCol2">
+                    <span class="items-numbers">23</span> <br />
+                    <span>items</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div
+                class="sellerCard"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="row sellerCard-innerRow">
+                  <div
+                    class="col-12 col-sm-9 innerCol1 d-flex flex-row align-items-center"
+                  >
+                    <img
+                      src="assets/images/seller.png"
+                      class="img-fluid"
+                      alt="Seller"
+                    />
+                    <div class="aboutSeller">
+                      <h6>James choe</h6>
+                      <h6>2.65 ETH</h6>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-3 innerCol2">
+                    <span class="items-numbers">15</span> <br />
+                    <span>items</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div
+                class="sellerCard"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="row sellerCard-innerRow">
+                  <div
+                    class="col-12 col-sm-9 innerCol1 d-flex flex-row align-items-center"
+                  >
+                    <img
+                      src="assets/images/seller.png"
+                      class="img-fluid"
+                      alt="Seller"
+                    />
+                    <div class="aboutSeller">
+                      <h6>Stave Bamer</h6>
+                      <h6>2.65 ETH</h6>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-3 innerCol2">
+                    <span class="items-numbers">33</span> <br />
+                    <span>items</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exclusive Assets / Explore -->
+    <div class="exclusive-assets" id="explore">
+      <div class="secContainer">
+        <h6 class="sec-small-heading">Exclusive Assets</h6>
+        <h1 class="sec-heading">Explore</h1>
+        <div class="assets-tabs-menu">
+          <ul>
+            <li>
+              <button
+                class="primary-button tablinks active"
+                onclick="handleClick(event, 'all')"
+              >
+                All NFTs
+              </button>
+            </li>
+            <li>
+              <button
+                class="primary-button tablinks"
+                onclick="handleClick(event, 'art')"
+              >
+                Art
+              </button>
+            </li>
+            <li>
+              <button
+                class="primary-button tablinks"
+                onclick="handleClick(event, 'Collectibeles')"
+              >
+                Collectibeles
+              </button>
+            </li>
+            <li>
+              <button
+                class="primary-button tablinks"
+                onclick="handleClick(event, 'virtulaCards')"
+              >
+                Virtual Worlds
+              </button>
+            </li>
+            <li>
+              <button
+                class="primary-button tablinks"
+                onclick="handleClick(event, 'trendingCards')"
+              >
+                Trending Cards
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="assets-content tabcontent allNFTs" id="all">
+          <div class="row assetsRow mb-lg-4">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset1.png"
+                    alt="assets2"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset2.png"
+                    alt="assets2"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Trading Cards</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset3.png"
+                    alt="assets3"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Domain Names</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset4.png"
+                    alt="asset4
+                    "
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Virtual Words</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row assetsRow mb-lg-4">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset5.png"
+                    alt="asset5"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Trading Cards</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset6.png"
+                    alt="asset6"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Domain Names</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/auction1.png"
+                    alt="asset7"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/auction7.png"
+                    alt="asset8"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Domain Names</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="assets-content tabcontent" id="art">
+          <div class="row assetsRow mb-lg-4">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset6.png"
+                    alt="art1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset5.png"
+                    alt="art2"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset4.png"
+                    alt="art3"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#3">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset3.png"
+                    alt="art4"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="assets-content tabcontent" id="Collectibeles">
+          <div class="row assetsRow mb-lg-4">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset1.png"
+                    alt="Collectibeles1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset2.png"
+                    alt="Collectibeles2"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset3.png"
+                    alt="Collectibeles3"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset4.png"
+                    alt="Collectibeles4"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="assets-content tabcontent" id="virtulaCards">
+          <div class="row assetsRow mb-lg-4">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset4.png"
+                    alt="Virtual1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset3.png"
+                    alt="Virtual"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset2.png"
+                    alt="Virtual"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset1.png"
+                    alt="Virtual"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="assets-content tabcontent" id="trendingCards">
+          <div class="row assetsRow mb-lg-4">
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset1.png"
+                    alt="trading1"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset2.png"
+                    alt="trading2"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset6.png"
+                    alt="trading3"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <div
+                class="assets-card"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="assets-card-img">
+                  <img
+                    src="assets/images/asset5.png"
+                    alt="Trading4"
+                    class="img-fluid"
+                  />
+                  <span class="cardTimer">
+                    <span class="hours">03 :</span>
+                    <span class="mins">18 :</span>
+                    <span class="secs">24</span>
+                  </span>
+                </div>
+                <div class="assets-card-content">
+                  <div
+                    class="d-flex flex-row justify-content-between align-items-center cardContent1-sec"
+                  >
+                    <h6>Collectibeles</h6>
+                    <div>
+                      <span> &#10084;</span>
+                      <span>92</span>
+                    </div>
+                  </div>
+                  <div
+                    class="card-user d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic1"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic2"
+                      />
+                      <img
+                        src="assets/images/pic1.png"
+                        alt="profile"
+                        class="img-fluid pic3"
+                      />
+                    </div>
+                    <span>9 + people place a bit</span>
+                  </div>
+                  <div
+                    class="owner d-flex flex-row justify-content-between align-items-center"
+                  >
+                    <span>Owned By <span class="strong">Charley</span></span>
+                    <span class="price-text"
+                      ><span class="arrow"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      5.4 ETH</span
+                    >
+                  </div>
+                  <div class="price text-center bid">
+                    <a href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>Place a bid</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec-button-cont">
+          <button class="primary-button sectionBtn text-white">
+            Load More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular Collections -->
+    <div class="collections-section" id="popularCollection">
+      <div class="secContainer">
+        <h6 class="sec-small-heading my-3">Browse by Category</h6>
+        <h1 class="sec-heading">Popular Collections</h1>
+        <div class="collections-content">
+          <div class="row collectionsRow">
+            <div class="col-6 col-md-4">
+              <div
+                class="collectionCard"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="collectionCard-img">
+                  <img
+                    src="assets/images/collection1.png"
+                    alt="Collection1"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="collectionCard-content d-flex flex-row justify-content-between align-items-center"
+                >
+                  <span>Trading Cards</span>
+                  <span>ERC-248</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div
+                class="collectionCard"
+                data-aos="flip-left"
+                data-aos-duration="2000"
+              >
+                <div class="collectionCard-img">
+                  <img
+                    src="assets/images/collection2.png"
+                    alt="Collection2"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="collectionCard-content d-flex flex-row justify-content-between align-items-center"
+                >
+                  <span>Music</span>
+                  <span>ERC-248</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div
+                class="collectionCard"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="collectionCard-img">
+                  <img
+                    src="assets/images/collection3.png"
+                    alt="Collection3"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="collectionCard-content d-flex flex-row justify-content-between align-items-center"
+                >
+                  <span>Domain Names</span>
+                  <span>ERC-358</span>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="row collectionsRow mb-4"> -->
+            <div class="col-6 col-md-4 mt-1 mt-md-4">
+              <div
+                class="collectionCard"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                <div class="collectionCard-img">
+                  <img
+                    src="assets/images/collection4.png"
+                    alt="Collection4"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="collectionCard-content d-flex flex-row justify-content-between align-items-center"
+                >
+                  <span>Virtual Worlds</span>
+                  <span>ERC-248</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mt-1 mt-md-4">
+              <div
+                class="collectionCard"
+                data-aos="flip-right"
+                data-aos-duration="2000"
+              >
+                <div class="collectionCard-img">
+                  <img
+                    src="assets/images/collection5.png"
+                    alt="Collection5"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="collectionCard-content d-flex flex-row justify-content-between align-items-center"
+                >
+                  <span>Collectibles</span>
+                  <span>ERC-248</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mt-1 mt-md-4">
+              <div
+                class="collectionCard"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                <div class="collectionCard-img">
+                  <img
+                    src="assets/images/collection6.png"
+                    alt="Collectio6"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="collectionCard-content d-flex flex-row justify-content-between align-items-center"
+                >
+                  <span>Utility</span>
+                  <span>ERC-358</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="works-section">
+      <div class="secContainer">
+        <h6 class="sec-small-heading">How it Works</h6>
+        <h1 class="sec-heading">Create & Sell your NFTs</h1>
+        <div class="sliderContent">
+          <div
+            id="carouselExampleControlsNoTouching"
+            class="carousel slide"
+            data-bs-touch="false"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row sliderRow">
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="sliderCard"
+                      data-aos="fade-right"
+                      data-aos-duration="2000"
+                    >
+                      <div class="sliderCard-img">
+                        <img
+                          src="assets/images/icon1.svg"
+                          alt="Slider Icon"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="sliderCard-content">
+                        <h5>Set up your wallet</h5>
+                        <p>
+                          There are a few things worth doing before creating
+                          your first NFTs. In the image above, you'll not
+                          personalized banner. To upload yours, press the pencil
+                          icon in the top right.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="sliderCard"
+                      data-aos="zoom-in"
+                      data-aos-duration="2000"
+                    >
+                      <div class="sliderCard-img">
+                        <img
+                          src="assets/images/icon2.svg"
+                          alt="Slider Icon"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="sliderCard-content">
+                        <h5>Create your Collection</h5>
+                        <p>
+                          There are a few things worth doing before creating
+                          your first NFTs. In the image above, you'll not
+                          personalized banner. To upload yours, press the pencil
+                          icon in the top right.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="sliderCard"
+                      data-aos="fade-left"
+                      data-aos-duration="2000"
+                    >
+                      <div class="sliderCard-img">
+                        <img
+                          src="assets/images/icon3.svg"
+                          alt="Slider Icon"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="sliderCard-content">
+                        <h5>List them for sale</h5>
+                        <p>
+                          There are a few things worth doing before creating
+                          your first NFTs. In the image above, you'll not
+                          personalized banner. To upload yours, press the pencil
+                          icon in the top right.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row sliderRow">
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="sliderCard"
+                      data-aos="fade-right"
+                      data-aos-duration="2000"
+                    >
+                      <div class="sliderCard-img">
+                        <img
+                          src="assets/images/icon1.svg"
+                          alt="Slider Icon"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="sliderCard-content">
+                        <h5>Set up your wallet</h5>
+                        <p>
+                          There are a few things worth doing before creating
+                          your first NFTs. In the image above, you'll not
+                          personalized banner. To upload yours, press the pencil
+                          icon in the top right.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="sliderCard"
+                      data-aos="zoom-in"
+                      data-aos-duration="2000"
+                    >
+                      <div class="sliderCard-img">
+                        <img
+                          src="assets/images/icon2.svg"
+                          alt="Slider Icon"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="sliderCard-content">
+                        <h5>Create your Collection</h5>
+                        <p>
+                          There are a few things worth doing before creating
+                          your first NFTs. In the image above, you'll not
+                          personalized banner. To upload yours, press the pencil
+                          icon in the top right.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="sliderCard"
+                      data-aos="fade-left"
+                      data-aos-duration="2000"
+                    >
+                      <div class="sliderCard-img">
+                        <img
+                          src="assets/images/icon3.svg"
+                          alt="Slider Icon"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="sliderCard-content">
+                        <h5>List them for sale</h5>
+                        <p>
+                          There are a few things worth doing before creating
+                          your first NFTs. In the image above, you'll not
+                          personalized banner. To upload yours, press the pencil
+                          icon in the top right.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row sliderRow">
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="sliderCard"
+                      data-aos="fade-right"
+                      data-aos-duration="2000"
+                    >
+                      <div class="sliderCard-img">
+                        <img
+                          src="assets/images/icon1.svg"
+                          alt="Slider Icon"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="sliderCard-content">
+                        <h5>Set up your wallet</h5>
+                        <p>
+                          There are a few things worth doing before creating
+                          your first NFTs. In the image above, you'll not
+                          personalized banner. To upload yours, press the pencil
+                          icon in the top right.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="sliderCard"
+                      data-aos="zoom-in"
+                      data-aos-duration="2000"
+                    >
+                      <div class="sliderCard-img">
+                        <img
+                          src="assets/images/icon2.svg"
+                          alt="Slider Icon"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="sliderCard-content">
+                        <h5>Create your Collection</h5>
+                        <p>
+                          There are a few things worth doing before creating
+                          your first NFTs. In the image above, you'll not
+                          personalized banner. To upload yours, press the pencil
+                          icon in the top right.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div
+                      class="sliderCard"
+                      data-aos="fade-left"
+                      data-aos-duration="2000"
+                    >
+                      <div class="sliderCard-img">
+                        <img
+                          src="assets/images/icon3.svg"
+                          alt="Slider Icon"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="sliderCard-content">
+                        <h5>List them for sale</h5>
+                        <p>
+                          There are a few things worth doing before creating
+                          your first NFTs. In the image above, you'll not
+                          personalized banner. To upload yours, press the pencil
+                          icon in the top right.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControlsNoTouching"
+              data-bs-slide="prev"
+            >
+              <span
+                class="fas fa-arrow-left controlBtnIcon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControlsNoTouching"
+              data-bs-slide="next"
+            >
+              <span
+                class="fas fa-arrow-right controlBtnIcon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="secContainer">
+        <div class="footerContent">
+          <div class="row footerRow gx-lg-5">
+            <div class="col-12 col-sm-6 col-md-5 footerCol1">
+              <a class="navbar-brand" href="#"
+                >NFT <span class="brand-special">Marina</span>
+              </a>
+              <p>
+                NFT Marina aims providing foundation for creating top notch
+                landing page, on the top of it you can build anything or
+                leverage it with any framework.
+              </p>
+              <div class="footerSocial">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 footerCol2">
+              <div class="line"></div>
+              <ul class="footerList">
+                <li><a href="#">All NFTs</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Create</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Privacy and Terms</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 footerCol3">
+              <div class="line"></div>
+              <ul class="footerList">
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Patners</a></li>
+                <li><a href="#">Suggestions</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 footerCol4">
+              <div class="line"></div>
+              <p>
+                signup for our newsletter to get the latest news in your inbox.
+              </p>
+              <div class="footerInputCont">
+                <input type="text" class="form-control" />
+                <button class="primary-button">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+    <!--  Javascript cdn-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  JQuery cdn-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome link-->
+    <script
+      src="https://kit.fontawesome.com/8441000675.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- initialize AOS library -->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

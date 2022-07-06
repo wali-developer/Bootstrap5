@@ -1,0 +1,688 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: var(--color-text);
+  background-color: var(--background);
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: black;
+}
+.secContainer {
+  width: 100%;
+  padding: 0 150px;
+  margin: 0 auto;
+}
+p {
+  color: var(--text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-weight: 600;
+}
+input:focus,
+.btn:focus,
+select:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+:root {
+  --primary-color: #f5c249;
+  --text-color: #787a8d;
+  --background: #16171d;
+}
+
+/* Link */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Navbar */
+.Navbar-section,
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.navbar-brand {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+.navbar-brand:hover {
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.navbar-brand span {
+  color: var(--primary-color);
+}
+#navbarSupportedContent ul li {
+  margin-left: 15px;
+}
+#navbarSupportedContent ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+}
+#navbarSupportedContent ul li a:hover {
+  color: var(--text-color);
+}
+.login {
+  color: #fff;
+  font-size: 13px;
+}
+.login:hover {
+  color: #fff;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: #000;
+  border: 1px solid var(--primary-color);
+  padding: 8px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.primary-button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.register {
+  padding: 0px 17px !important;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.navbar-dropdowns {
+  margin-left: 20px;
+}
+.navbar-dropdowns .dropdown:last-child {
+  margin-left: 12px;
+}
+.navbar-dropdowns img {
+  width: 16px;
+}
+.navbar-dropdowns .dropdown-toggle {
+  border: none;
+  color: rgb(122, 122, 122);
+  background-color: transparent;
+  font-size: 12px;
+  margin-left: 4px;
+}
+.dropdown-menu {
+  background-color: var(--background);
+  box-shadow: 0 0 2px rgb(134, 134, 134);
+}
+.dropdown-menu li {
+  padding-top: 10px;
+  margin-right: 12px;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+}
+.dropdown-menu li a:hover {
+  color: #000 !important;
+}
+
+/* Header */
+.header-section {
+  margin: 70px 0 60px 0;
+}
+.headerCol1-content h1 {
+  font-weight: 700;
+}
+.headerCol1-content p {
+  margin: 12px 0 35px 0;
+}
+.headerCol2 {
+  text-align: right;
+}
+
+/* Services */
+.services-section {
+  margin: 0 0 50px 0;
+}
+.serviceCard {
+  padding: 30px 27px;
+  border: 2px solid;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid #3f3f3f;
+  width: 100%;
+  height: 240px;
+}
+.serviceCard:hover {
+  background-color: #fdebbf;
+  border: 2px solid #e5c885;
+  transition: 0.5s;
+}
+.serviceCard2:hover {
+  background-color: #84c7db;
+  border: 2px solid #84c7db;
+}
+
+.serviceCard3:hover {
+  background-color: #ffdae4;
+  border: 2px solid #e6adbc;
+}
+.serviceCard:hover .card-heading,
+.card-para {
+  color: #000;
+}
+.serviceCard:hover .card-heading {
+  font-weight: 700;
+}
+.serviceCard:hover .card-para {
+  font-weight: 500;
+  color: black;
+}
+.serviceCard img {
+  width: 35px;
+}
+.serviceCard h4 {
+  margin: 30px 0 12px 0;
+  font-weight: 500;
+}
+.serviceCard p {
+  color: var(--text-color);
+}
+
+/* Trading */
+.trading-section {
+  margin: 100px 0;
+}
+.tradingCol2 {
+  width: 400px;
+  max-width: 100%;
+}
+.tradingCol2 p {
+  margin: 11px 0 35px 0;
+}
+
+/* Tranding Market Table */
+.marketBtn-cont {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* News section */
+.news-section {
+  margin: 50px 115px;
+}
+.newsContent h2 {
+  padding: 30px 0;
+}
+.newsRow {
+  margin: 20px 0;
+  margin-left: -10px;
+}
+.news-card {
+  background-color: #21242d;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.cardCol2 h6 {
+  font-weight: 500;
+}
+.cardDetails span {
+  color: var(--text-color);
+  line-height: 0.5;
+  font-size: 12px;
+}
+.cardDetails .news-cat {
+  color: var(--primary-color);
+}
+.readMore-container {
+  text-align: center;
+  padding: 10px 0;
+}
+.readMore {
+  border: 1px solid var(--text-color);
+  color: white;
+  background-color: transparent;
+}
+.readMore:hover {
+  border: 1px solid var(--primary-color);
+  color: black;
+  background-color: var(--primary-color);
+  /* font-weight: 600; */
+}
+
+/* Subscription */
+.subscription-section {
+  margin: 150px 0 60px 0;
+}
+.subscriptionRow {
+  background-color: #21242d;
+  padding: 0 100px;
+}
+.subscriptionCol1 h2 {
+  width: 320px;
+  max-width: 100%;
+}
+.subscriptionCol1 .form {
+  margin-top: 30px;
+}
+.form input {
+  margin-right: 10px;
+  border-radius: 8px;
+  background-color: #16171d;
+  color: var(--text-color) !important;
+  border: none;
+  padding: 10px 15px;
+}
+.form input,
+.form button {
+  font-size: 13px;
+}
+.form input:focus {
+  background-color: #16171d;
+  box-shadow: none;
+}
+.subscriptionCol2 img {
+  margin-top: -18%;
+}
+
+/* Footer */
+.footer-section {
+  margin: 0;
+}
+.footer-content {
+  border-top: 1px solid #21242d;
+  padding: 40px 0 0 0;
+}
+.footerRow {
+  margin: 0 auto;
+  border-bottom: 1px solid #21242d;
+  padding-bottom: 15px;
+  padding: 0 100px;
+}
+.footerCol1 {
+  padding-left: 0 !important;
+}
+.footerCol1 p {
+  margin: 40px 0 20px 0;
+}
+.social i {
+  color: var(--text-color);
+  font-size: 22px;
+  margin-right: 13px;
+}
+.footerListCol ul {
+  margin: 20px 0;
+  list-style-type: none;
+}
+.footerListCol ul li {
+  margin: 7px 0 0 -28px;
+}
+.footerListCol ul li a:hover {
+  color: #fff;
+}
+.copyright {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+/* Registration UI */
+.modelBody {
+  margin: 0 70px !important;
+}
+.registration-form input,
+.login-form input {
+  height: 3.2rem;
+  border: 1px solid rgb(146, 146, 146);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.modelBody input:focus {
+  box-shadow: none !important;
+  border: 1px solid var(--primary-color) !important;
+}
+.modelBody label {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+.form-para {
+  font-size: 13px;
+  text-align: left;
+}
+.form-para span {
+  color: var(--primary-color);
+}
+.register-button {
+  border-radius: 3px;
+  height: 3.2rem;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  width: 100%;
+}
+.modal-title {
+  line-height: 1.5;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.modal-header {
+  border-bottom: 0;
+  padding-top: 15px;
+}
+.modal-content {
+  border: none;
+  padding: 10px 0 45px 0;
+  border-radius: 10px;
+}
+.modal-header .btn-close {
+  padding: 15px 60px 0 0;
+}
+
+.modal-header .btn-close:focus {
+  box-shadow: none;
+}
+
+/* Login UI */
+.login-model-content {
+  padding: 0 0 25px 0;
+}
+.login-btn-close {
+  padding: 35px 60px 0 0 !important;
+}
+#staticBackdropLabel {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.social-content {
+  padding: 3px 10px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 6px 0;
+}
+.facebookContent {
+  background-color: #3a5999;
+}
+.facebookContent:hover {
+  background-color: #1c4086;
+}
+.social-content i {
+  color: lightgray;
+}
+.social-content button {
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+}
+.social-content button:hover {
+  color: #fff;
+}
+.googleContent {
+  background-color: #dd4a3a;
+}
+.googleContent:hover {
+  background-color: #f31a02;
+}
+.linkedInContent {
+  background-color: #1e87be;
+}
+.linkedInContent:hover {
+  background-color: #04a7ff;
+}
+.twitterContent {
+  background-color: #54abee;
+}
+.twitterContent:hover {
+  background-color: #199cff;
+}
+fieldset {
+  border: 1px solid black;
+}
+
+/* inputs  */
+.keepMeLogged .form-check-input {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  margin-right: 5px !important;
+  cursor: pointer;
+  margin-top: 4px;
+}
+.keepMeLogged .form-check-input:focus {
+  box-shadow: none;
+}
+.keepMeLogged .form-check-label,
+.forgotPass a {
+  font-size: 14px;
+  color: rgb(95, 95, 95);
+  font-weight: normal;
+}
+.forgot {
+  text-decoration: underline;
+  color: rgb(95, 95, 95);
+  font-weight: normal;
+  cursor: pointer;
+}
+.forgot:hover {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.noAccountPara {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 13px;
+}
+.registerNow {
+  color: var(--primary-color);
+}
+.registerNow:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.noAccountParak span {
+  color: var(--primary-color) !important;
+}
+.loginInfoContainer {
+  margin-bottom: 35px;
+}
+.login-form input[type="checkbox"] {
+  height: 14px;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+/* model vertically alignment */
+.vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+.modal-content {
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width: inherit;
+  max-width: inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+  height: inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events: all;
+}
+
+/* Responsive media queries */
+@media only screen and (max-width: 1200px) {
+  .form input {
+    padding: 12px;
+  }
+  .form button {
+    margin-top: 20px;
+  }
+  .subscriptionRow {
+    padding: 30px 50px;
+  }
+  .footerRow {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .secContainer {
+    padding: 0 80px;
+  }
+  .navbar-dropdowns {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  #navbarSupportedContent ul {
+    margin-top: 20px;
+  }
+  #navbarSupportedContent ul li {
+    margin-left: 0;
+    margin: 3px 0;
+  }
+  .navbar-buttons {
+    margin-left: -10px;
+  }
+  .navbar-toggler-icon {
+    border: 1px solid var(--primary-color);
+    padding: 8px 0 0 0;
+    color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+  .serviceCard {
+    height: 330px;
+  }
+  .tradingCol2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .row.StoresRow {
+    display: flex;
+    justify-content: center;
+  }
+  .news-section {
+    margin: 50px 0;
+  }
+  .copyright {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 776px) {
+  .secContainer {
+    padding: 0 50px;
+  }
+  .navbar-toggler-icon {
+    border: 1px solid var(--primary-color);
+    padding: 5px 0 0 0;
+    color: var(--primary-color);
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .headerCol1 {
+    text-align: center;
+  }
+  .headerCol2 {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .serviceCard {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .newsCol {
+    margin-bottom: 20px;
+  }
+  .cardCol2 {
+    margin-top: 20px;
+  }
+  .subscriptionCol2 img {
+    margin-top: 20px;
+  }
+  .subscriptionRow {
+    padding: 30px 100px;
+  }
+  .footerRow {
+    padding: 0 0;
+  }
+  .form button {
+    margin: 15px auto;
+    width: 100%;
+  }
+  .subscriptionRow {
+    padding: 30px;
+  }
+  .form input {
+    padding: 10px;
+    margin-right: 0;
+  }
+  .footerCol1 {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .secContainer {
+    padding: 0 15px;
+  }
+  .serviceCard {
+    height: 240px;
+  }
+  .form input {
+    padding: 12px;
+  }
+  .subscriptionCol1 h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .subscriptionRow {
+    padding: 30px 0;
+  }
+  .footerRow {
+    padding: 0;
+  }
+  .form button {
+    margin: 15px auto;
+  }
+  .modelBody {
+    margin: 0 !important;
+  }
+  .loginInfoContainer {
+    flex-wrap: wrap;
+  }
+}

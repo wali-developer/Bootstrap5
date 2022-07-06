@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sedan DE</title>
+
+    <!-- bootstrap stylesheet cdn-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom stylesheet link-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AOS libray css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header-->
+    <div class="Header-container">
+      <div class="secContainer">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sedan DE</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span><i class="fas fa-align-justify" id="togglerIcon"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#integration">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Prices">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#analytics">Pages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Prices">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faqs">Contact</a>
+                </li>
+                <li>
+                  <button class="primary-button">Try For Free</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!--  Header main -->
+        <div
+          class="header-content row d-flex justify-content-center align-items-center gx-0"
+        >
+          <div class="col-12 col-md-5 header-left">
+            <h1>Landing page for your product, that covers it</h1>
+            <p>
+              Description that defines your product or APP should go here, any
+              further details, should be added in video in about us section
+            </p>
+            <div class="d-flex flex-row align-items-center">
+              <button class="primary-button request-access">
+                Request Access
+              </button>
+
+              <button
+                class="player-btn d-flex flex-row align-items-center"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="fas fa-play"></i>
+                <span>How it Works</span>
+              </button>
+            </div>
+            <p class="pt-4 topClients-para">Your top Clients:</p>
+            <div class="clients d-flex flex-row">
+              <img
+                src="./images/Astusx.png"
+                alt="client"
+                width="45"
+                class="img-fluid"
+              />
+              <img
+                src="./images/Astusx1.png"
+                alt="client"
+                width="45"
+                class="img-fluid mx-5"
+              />
+              <img
+                src="./images/Astusx2.png"
+                alt="client"
+                width="45"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-7 header-right">
+            <div data-aos="fade-left" data-aos-duration="1500">
+              <img
+                src="images/header-img.png"
+                alt="Header Image"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">About us</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <video width="100" height="100" controls>
+                  <source src="./videos/aboutUs.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="primary-button model-btn"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features-->
+    <section class="features-section" id="services">
+      <div class="secContainer">
+        <div class="features-headContent">
+          <h2>With all the Features You Need</h2>
+          <p>
+            Credibly grow premier ideas rather than bricks and clicks stratefic
+            theme areas distributed for stand-alone web-readiness
+          </p>
+        </div>
+        <div class="row featuresRow">
+          <div class="col-12 col-md-4 singleFeature">
+            <i class="fab fa-app-store"></i>
+            <h5>Good Performance</h5>
+            <p>
+              Appropriately grow competitive rather leadership the leadership
+              process sound without state.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 singleFeature">
+            <i class="fab fa-app-store" style="background-color: #f25767"></i>
+            <h5>Good Performance</h5>
+            <p>
+              Appropriately grow competitive rather leadership the leadership
+              process sound without state.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 singleFeature">
+            <i class="fab fa-app-store" style="background-color: #0b163f"></i>
+            <h5>Good Performance</h5>
+            <p>
+              Appropriately grow competitive rather leadership the leadership
+              process sound without state.
+            </p>
+          </div>
+        </div>
+        <div class="row feauturesRow2">
+          <div class="col-12 col-md-6">
+            <div data-aos="fade-right" data-aos-duration="1300">
+              <div class="featureCard row gx-2">
+                <div class="col-7 featureCardCol1">
+                  <h5>Utilize your software data</h5>
+                  <p>
+                    Progressively reinvent model and niche revolutionary
+                    benefits for integrated
+                  </p>
+                  <button class="primary-button featureCardbtn">
+                    Learn More
+                  </button>
+                </div>
+                <div class="col-5">
+                  <img
+                    src="./images/cta-img-2.png"
+                    alt="feature image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div data-aos="fade-left" data-aos-duration="1300">
+              <div class="featureCard2 featureCard row">
+                <div class="col-7 featureCardCol1">
+                  <h5>Get real time updated anytime</h5>
+                  <p>
+                    Progressively reinvent model and niche revolutionary
+                    benefits for integrated
+                  </p>
+                  <button class="primary-button featureCardbtn featureCardbtn2">
+                    Learn More
+                  </button>
+                </div>
+                <div class="col-5">
+                  <img
+                    src="./images/promo1.png"
+                    alt="feature image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advanced Analytics -->
+    <section class="analytics-section" id="analytics">
+      <div class="secContainer">
+        <div class="row analyticsRow d-flex align-items-center">
+          <div class="col-12 col-md-6 analyticsCol1">
+            <div class="analyticsCol1-content">
+              <i class="fab fa-app-store"></i>
+              <h2>Advanced Analytics, Understand Business</h2>
+              <p>
+                Credibly grow premier ideas rather than bricks and clicks
+                stratefic theme areas distributed for stand-alone web-readiness
+              </p>
+              <div class="row list-row d-flex justify-content-between">
+                <div class="col-12 col-md-6">
+                  <ul>
+                    <li>Thought Leadership</li>
+                    <li>Modernized Prospecting</li>
+                    <li>Showcasing success</li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                  <ul class="analytics-ul-2">
+                    <li>Personal branding</li>
+                    <li>Refer win rates</li>
+                    <li>Sales compliance</li>
+                  </ul>
+                </div>
+              </div>
+              <span>Know More About Us- </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 analyticsCol2">
+            <div
+              class="analyticsCol2-content"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <img
+                src="./images/analytics.png"
+                alt="Analytics"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="analytics-section margin-top">
+      <div class="secContainer">
+        <div class="row analyticsRow d-flex align-items-center">
+          <div class="col-12 col-md-6 analyticsCol2">
+            <div
+              class="analyticsCol2-content margin-bottom"
+              style="width: 100%"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <img
+                src="./images/dashboard.png"
+                alt="Analytics"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 analyticsCol1">
+            <div class="analyticsCol1-content">
+              <i class="fab fa-app-store brand-style-icon"></i>
+              <h2>Match Everything to Brand and Style</h2>
+              <p>
+                Credibly grow premier ideas rather than bricks and clicks
+                stratefic theme areas distributed for stand-alone web-readiness
+              </p>
+              <p>
+                Credibly grow premier ideas rather than bricks and clicks
+                stratefic theme areas distributed for stand-alone web-readiness
+              </p>
+              <span>Know More About Us- </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="secContainer">
+        <div class="testimonials-header-content">
+          <span>Testimonials</span>
+          <h2>What They Say About Us</h2>
+          <p>
+            Credibly grow premier ideas rather than bricks and clicks stratefic
+            theme areas distributed for stand-alone web-readiness
+          </p>
+        </div>
+        <div class="row testimonials-row d-flex align-items-center">
+          <div class="col-12 col-md-6 testimonials-col1 margin-bottom">
+            <div class="testimonials-col-content">
+              <h4>The Best Template You Got to Have it!</h4>
+              <div class="rating">
+                <ul>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <p>
+                Credibly grow premier ideas rather than bricks and clicks
+                stratefic theme areas distributed for stand-alone web-readiness.
+                Credibly grow premier ideas rather than bricks and clicks
+                stratefic theme areas distributed for stand-alone web-readiness.
+                Credibly grow premier ideas rather than bricks and clicks
+                stratefic theme areas distributed for stand-alone web-readiness
+              </p>
+              <div class="author">
+                <h5>Joe Richard</h5>
+                <p>Visual Designer</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 testimonials-col2"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <img
+              src="./images/testimonials.png"
+              alt="Testimonials"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials-section test-section2">
+      <div class="secContainer">
+        <div class="testimonials-header-content testimonials-header-content2">
+          <span class="small-text-testi">Testimonials</span>
+          <h2 class="">We Follow Our Work Process</h2>
+          <p>
+            Credibly grow premier ideas rather than bricks and clicks stratefic
+            theme areas distributed for stand-alone web-readiness
+          </p>
+        </div>
+        <div
+          class="row testimonials-row testimonials-row2 d-flex align-items-center"
+        >
+          <div
+            class="col-12 col-md-5 testimonials-col2"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img
+              src="./images/testimonials-2.png"
+              alt="Testimonials"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-12 col-md-7 testimonials-col1 margin-bottom">
+            <div class="testimonials-col-content testimonials-col-content2">
+              <div class="work-step">
+                <span class="step-text">Step 1</span>
+                <h5>Research and Content Planing</h5>
+                <p>
+                  Credibly grow premier ideas rather than bricks and clicks
+                  stratefic theme areas distributed for stand-alone
+                  web-readiness
+                </p>
+              </div>
+              <div class="work-step">
+                <span class="step-text">Step 1</span>
+                <h5>Research and Content Planing</h5>
+                <p>
+                  Credibly grow premier ideas rather than bricks and clicks
+                  stratefic theme areas distributed for stand-alone
+                  web-readiness
+                </p>
+              </div>
+              <div class="work-step">
+                <span class="step-text">Step 1</span>
+                <h5>Research and Content Planing</h5>
+                <p>
+                  Credibly grow premier ideas rather than bricks and clicks
+                  stratefic theme areas distributed for stand-alone
+                  web-readiness
+                </p>
+              </div>
+              <div class="work-step">
+                <span class="step-text">Step 1</span>
+                <h5>Research and Content Planing</h5>
+                <p>
+                  Credibly grow premier ideas rather than bricks and clicks
+                  stratefic theme areas distributed for stand-alone
+                  web-readiness
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prices -->
+
+    <div class="prices-section" id="Prices">
+      <div class="secContainer">
+        <div class="prices-header-content">
+          <span class="prices-text">Pricing</span>
+          <h2 class="mt-2">Check Our Valuble Price</h2>
+          <p>
+            Credibly grow premier ideas rather than bricks and clicks stratefic
+            theme areas distributed for stand-alone web-readiness
+          </p>
+        </div>
+        <div class="row Pricing-features-row d-flex align-items-center">
+          <div class="col-12 col-md-4 featuresCol">
+            <i class="fab fa-app-store features-icon"></i>
+            <span>No credit card required</span>
+          </div>
+          <div class="col-12 col-md-4 featuresCol">
+            <i
+              class="fab fa-app-store features-icon"
+              style="color: #5bb297; background-color: #def4ed"
+            ></i>
+            <span>No credit card required</span>
+          </div>
+          <div class="col-12 col-md-4 featuresCol">
+            <i
+              class="fab fa-app-store features-icon"
+              style="color: #ff0642; background-color: #fcdde1"
+            ></i>
+            <span>No credit card required</span>
+          </div>
+        </div>
+        <div class="row pricingRow" id="pricesParent">
+          <div class="col-12 col-md-4 pricingCol">
+            <div
+              class="pricingCard"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <span class="prices-text">Standard</span>
+              <div>
+                <strong class="cardPrice">$29</strong><span>/month</span>
+              </div>
+              <div class="product-featues">
+                <ul>
+                  <li>1 Team</li>
+                  <li>1 Installed Agent</li>
+                  <li>Real Time Feedback</li>
+                  <li>Video Support</li>
+                  <li>1 Attacked Targets per month</li>
+                  <li>Team Collaboration Tools</li>
+                  <li>Authorized Updated Features</li>
+                  <li>24/7 Life Time Support</li>
+                </ul>
+              </div>
+              <button class="primary-button featureCardbtn pricingbtn">
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pricingCol">
+            <div
+              class="pricingCard"
+              data-aos="zoom-out"
+              data-aos-duration="1500"
+            >
+              <span class="prices-text">Standard</span>
+              <div>
+                <strong class="cardPrice">$29</strong><span>/month</span>
+              </div>
+              <div class="product-featues">
+                <ul>
+                  <li>1 Team</li>
+                  <li>1 Installed Agent</li>
+                  <li>Real Time Feedback</li>
+                  <li>Video Support</li>
+                  <li>1 Attacked Targets per month</li>
+                  <li>Team Collaboration Tools</li>
+                  <li>Authorized Updated Features</li>
+                  <li>24/7 Life Time Support</li>
+                </ul>
+              </div>
+              <button class="primary-button featureCardbtn pricingbtn">
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pricingCol">
+            <div
+              class="pricingCard"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <span class="prices-text">Standard</span>
+              <div>
+                <strong class="cardPrice">$29</strong><span>/month</span>
+              </div>
+              <div class="product-featues">
+                <ul>
+                  <li>1 Team</li>
+                  <li>1 Installed Agent</li>
+                  <li>Real Time Feedback</li>
+                  <li>Video Support</li>
+                  <li>1 Attacked Targets per month</li>
+                  <li>Team Collaboration Tools</li>
+                  <li>Authorized Updated Features</li>
+                  <li>24/7 Life Time Support</li>
+                </ul>
+              </div>
+              <button class="primary-button featureCardbtn pricingbtn">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frequently Asked Questions -->
+    <div class="faq-seciton" id="faqs">
+      <div class="secContainer">
+        <div class="prices-header-content faq-header-content">
+          <span class="prices-text faq-text">FAQ</span>
+          <h2 class="mt-2">Frequently Added Questions</h2>
+          <p>
+            Credibly grow premier ideas rather than bricks and clicks stratefic
+            theme areas distributed for stand-alone web-readiness
+          </p>
+        </div>
+        <div class="row faq-row">
+          <div class="col-12 col-md-8">
+            <div class="question">
+              <h5>1. How does back pricing work?</h5>
+              <p>
+                Credibly grow premier ideas rather than bricks and clicks
+                stratefic theme areas distributed for stand-alone web-readiness
+              </p>
+            </div>
+            <div class="question">
+              <h5>2. How does back pricing work?</h5>
+              <p>
+                Credibly grow premier ideas rather than bricks and clicks
+                stratefic theme areas distributed for stand-alone web-readiness
+              </p>
+            </div>
+            <div class="question">
+              <h5>3. How does back pricing work?</h5>
+              <p>
+                Credibly grow premier ideas rather than bricks and clicks
+                stratefic theme areas distributed for stand-alone web-readiness
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div
+              class="faqCol2-content"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <img
+                src="./images/faq-image.png"
+                alt="FAQs"
+                class="img-fluid balance-img"
+              />
+              <img
+                src="./images/phone-screen.png"
+                alt="FAQs"
+                class="img-fluid mobile-screen"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Collaborator companies -->
+
+    <div class="collaborate-section" id="integration">
+      <div class="secContainer">
+        <div class="collaborate-header-content prices-header-content">
+          <span class="integration-text">Integration</span>
+          <h2 class="mt-3">We Collaborate with Top Software Company</h2>
+          <button class="primary-button integ-btn">
+            View all integrations
+          </button>
+        </div>
+        <div class="row featuresRow collaborateRow">
+          <div
+            class="col-12 col-md-6 singleFeature singleColl-company"
+            data-aos="fade-right"
+            data-aos-duration="1300"
+          >
+            <i class="fab fa-app-store"></i>
+            <h5>Google Drive</h5>
+            <p>
+              Appropriately grow competitive rather leadership the leadership
+              process sound without state.
+            </p>
+          </div>
+          <div
+            class="col-12 col-md-6 singleFeature singleColl-company"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <i
+              class="fab fa-app-store"
+              style="color: #f25767; background-color: #fcdde1"
+            ></i>
+            <h5>Google Drive</h5>
+            <p>
+              Appropriately grow competitive rather leadership the leadership
+              process sound without state.
+            </p>
+          </div>
+        </div>
+        <div class="free-trial">
+          <div class="free-trial-content">
+            <span>Get Free Support</span>
+            <h2 class="my-2 mb-3">Start your 14 days trial</h2>
+            <p>
+              Credibly grow premier ideas rather than bricks and clicks
+              stratefic theme areas distributed for stand-alone web-readiness
+            </p>
+            <button class="primary-button trial-btn">Try Now</button>
+            <div class="trial-list">
+              <ul>
+                <li>Free 14 days trial</li>
+                <li>No credit card required</li>
+                <li>Support 24/7</li>
+                <li>Cancel anytime</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-->
+
+    <div class="footer">
+      <div class="secContainer">
+        <div class="row footerRow">
+          <div class="col-12 col-md-5 footerCol1">
+            <h4 class="footerLogo">Sedan DE</h4>
+            <p>
+              Credibly grow premier ideas rather than bricks and clicks
+              stratefic theme
+            </p>
+            <form>
+              <div class="row formRow gx-2">
+                <div class="col-12 col-md-8 inputCol">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="email@domain.com"
+                  />
+                </div>
+                <div class="col-12 col-md-2 buttonCol">
+                  <button type="submit" class="primary-button sendMessage">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-sm-4 col-md-3 footerCol2">
+            <div class="column">
+              <h6>Primary Page</h6>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Service</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-md-2 footerCol2">
+            <div class="column">
+              <h6>Page</h6>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Service</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-md-2 footerCol2">
+            <div class="column">
+              <h6>Template</h6>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Service</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyrightRow">
+          <p>
+            2022 DE Products - All Rights Reserved Made for your next Project
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--  Popper cdn-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  Javascript cdn-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  JQuery cdn-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome link-->
+    <script
+      src="https://kit.fontawesome.com/8441000675.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--  Javascript-->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

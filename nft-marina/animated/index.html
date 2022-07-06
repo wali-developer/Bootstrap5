@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Marina</title>
+
+    <!-- bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="Navbar-section">
+      <div class="secContainer">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand"
+              href="#"
+              data-aos="zoom-out"
+              data-aos-duration="1300"
+              >NFT <span class="brand-special">Marina</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span><i class="fas fa-bars navbar-toggler-icon"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#market">Markets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Products</a>
+                </li>
+              </ul>
+              <div class="d-flex navbar-buttons">
+                <button
+                  class="btn login me-2"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  Log in
+                </button>
+                <button
+                  class="btn primary-button register"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registrationModal"
+                >
+                  Sign Up
+                </button>
+              </div>
+              <div class="navbar-dropdowns d-flex flex-row">
+                <div class="dropdown me-2">
+                  <img
+                    src="assets/images/Currency.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <button
+                    class="dropdown-toggle"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></button>
+
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <img
+                    src="assets/images/Currency1.svg"
+                    alt="US Flag"
+                    class="img-fluid"
+                  />
+                  <button
+                    class="dropdown-toggle"
+                    id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></button>
+
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton2"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div
+      class="modal fade"
+      id="registrationModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body modelBody">
+              <h4 class="modal-title" id="staticBackdropLabel">
+                Create Account
+              </h4>
+              <form class="registration-form">
+                <div class="mb-3">
+                  <label for="exampleInputName" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputName"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail" class="form-label"
+                    >Email or Phone</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputConfirmPass" class="form-label"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputConfirmPass"
+                  />
+                </div>
+                <p class="form-para">
+                  By signing up, you agree to the
+                  <span>terms of services</span> and <span>privacy policy</span>
+                </p>
+                <button
+                  type="submit"
+                  class="btn primary-button register-button"
+                >
+                  Register
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="loginLabel"
+      aria-hidden="true"
+    >
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content login-model-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close login-btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body modelBody loginModelBody">
+              <h4 class="modal-title" id="loginLabel">Login With</h4>
+              <div class="social-buttons mb-2">
+                <div class="row buttonsRow">
+                  <div class="col-12 col-md-6 buttonsCol">
+                    <div class="social-content facebookContent">
+                      <i class="fab fa-facebook-square"></i>
+                      <button class="btn">Facebook</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 buttonsCol">
+                    <div class="social-content googleContent">
+                      <i class="fab fa-google-plus"></i>
+                      <button class="btn">Google Plus</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row buttonsRow">
+                  <div class="col-12 col-md-6 buttonsCol">
+                    <div class="social-content linkedInContent">
+                      <i class="fab fa-facebook-square"></i>
+                      <button class="btn">Facebook</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 buttonsCol">
+                    <div class="social-content twitterContent">
+                      <i class="fab fa-google-plus"></i>
+                      <button class="btn">Google Plus</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="line row d-flex align-items-center gx-0 mb-2">
+                <div
+                  class="col-5"
+                  style="border-bottom: 2px solid lightgray"
+                ></div>
+                <div class="col-2" style="text-align: center">or</div>
+                <div
+                  class="col-5"
+                  style="border-bottom: 2px solid lightgray"
+                ></div>
+              </div>
+              <form class="login-form">
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label"
+                    >Email or Phone</label
+                  >
+                  <input type="email" class="form-control" id="loginEmail" />
+                </div>
+                <div class="mb-3">
+                  <label for="loginPassword" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="loginPassword"
+                  />
+                </div>
+                <div
+                  class="d-flex flex-row justify-content-between align-items-center loginInfoContainer mb-4"
+                >
+                  <div class="keepMeLogged">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Keep me logged in</label
+                    >
+                  </div>
+                  <div class="forgotPass">
+                    <a class="forgot" href="#">Forgot Passoword?</a>
+                  </div>
+                </div>
+                <button class="btn primary-button register-button">
+                  Login
+                </button>
+                <p class="noAccountPara">
+                  Don't have an account?
+                  <a class="registerNow" href="#">Register now</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <section class="header-section">
+      <div class="secContainer">
+        <div
+          class="row headerRow d-flex align-items-center justify-content-end"
+        >
+          <div
+            class="col-12 col-md-6 headerCol1"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-anchor="#example-anchor"
+          >
+            <div class="headerCol1-content">
+              <h1>Start trading Crypto Currency Easily</h1>
+              <p>Join the world largest crypto exchange</p>
+              <button class="btn primary-button" type="submit">
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 headerCol2"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-anchor="#example-anchor"
+          >
+            <img
+              src="assets/images/header-image.png"
+              alt="Header Image"
+              class="img-fluid circularImg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-section" id="services">
+      <div class="secContainer">
+        <div class="row servicesRow">
+          <div
+            class="col-12 col-md-4 servicesCol1"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <div class="serviceCard serviceCard1">
+              <div class="card-content">
+                <img
+                  src="assets/images/icon1.svg"
+                  alt="Secure Icon"
+                  class="img-fluid cardIcon1"
+                />
+                <h4 class="card-heading">Strong Security</h4>
+                <p class="card-para">
+                  Secure transaction and record information with 2-factor
+                  authentication (2FA)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 servicesCol2"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <div class="serviceCard serviceCard2">
+              <div class="card-content">
+                <img
+                  src="assets/images/icon2.svg"
+                  alt="Secure Icon"
+                  class="img-fluid cardIcon2"
+                />
+                <h4 class="card-heading">Payment Options</h4>
+                <p class="card-para">
+                  Flexible payment of methods with Visa, Mastercard, Paypal,
+                  bank transfer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 servicesCol3 service-col"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <div class="serviceCard serviceCard3">
+              <div class="card-content">
+                <img
+                  src="assets/images/icon3.svg"
+                  alt="Secure Icon"
+                  class="img-fluid cardIcon3"
+                />
+                <h4 class="card-heading">Market Updated</h4>
+                <p class="card-para">
+                  The most accurate and trusted source for market cap,
+                  valuation, and cryptocurrency information
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trading -->
+    <section class="trading-section">
+      <div class="secContainer">
+        <div
+          class="row tradingRow d-flex justify-content-around align-items-center"
+        >
+          <div
+            class="col-12 col-md-6 tradingCol1"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              src="assets/images/header-image.png"
+              alt="Trading"
+              class="img-fluid circularImg"
+            />
+          </div>
+          <div
+            class="col-12 col-md-6 tradingCol2"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
+            <h1>Trading everytime and everywhere</h1>
+            <p>Start with our Crypto App. Download now!</p>
+            <div class="row StoresRow">
+              <div class="col-4">
+                <a href="#https://play.google.com/">
+                  <img
+                    src="assets/images/google.svg"
+                    alt="Google Play"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="col-4">
+                <a href="#https://www.apple.com/app-store/">
+                  <img
+                    src="assets/images/app-store.svg"
+                    alt="App Store"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Trends Table -->
+
+    <div class="market-trends" id="market">
+      <div class="secContainer">
+        <img
+          src="assets/images/market-trends-table.png"
+          alt="Market trends table"
+          class="img-fluid"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        />
+        <div class="marketBtn-cont">
+          <button class="btn primary-button readMore">View Market</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- News Section -->
+    <section class="news-section">
+      <div class="secContainer">
+        <div class="newsContent">
+          <h2>News Of The Day</h2>
+          <div class="row newsRow d-flex">
+            <div
+              class="col-12 col-md-6 newsCol"
+              data-aos="flip-up"
+              data-aos-duration="2000"
+              data-aos-easing="ease-out-cubic"
+            >
+              <div class="news-card">
+                <div class="row cardRow gx-3">
+                  <div class="col-12 col-md-3 cardCol1">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="Blog 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-12 col-md-9 cardCol2">
+                    <h6>
+                      Analysts project 32% upside for Coinbase stock despite...
+                    </h6>
+                    <p>
+                      Coinbase is adding another $500 million to its investment
+                      in a ...
+                    </p>
+                    <div class="d-flex flex-row cardDetails">
+                      <span class="news-cat">Finbold</span>
+                      <span class="news-time">&nbsp; &nbsp; . 4 min ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 newsCol"
+              data-aos="flip-down"
+              data-aos-duration="2000"
+              data-aos-easing="ease-out-cubic"
+            >
+              <div class="news-card">
+                <div class="row cardRow gx-3">
+                  <div class="col-12 col-md-3 cardCol1">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="Blog 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-12 col-md-9 cardCol2">
+                    <h6>
+                      Analysts project 32% upside for Coinbase stock despite...
+                    </h6>
+                    <p>
+                      Coinbase is adding another $500 million to its investment
+                      in a ...
+                    </p>
+                    <div class="d-flex flex-row cardDetails">
+                      <span class="news-cat">Finbold</span>
+                      <span class="news-time">&nbsp; &nbsp; . 4 min ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row newsRow d-flex justify-content-center">
+            <div
+              class="col-12 col-md-6 newsCol"
+              data-aos="flip-up"
+              data-aos-duration="2000"
+              data-aos-easing="ease-out-cubic"
+            >
+              <div class="news-card">
+                <div class="row cardRow gx-3">
+                  <div class="col-12 col-md-3 cardCol1">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="Blog 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-12 col-md-9 cardCol2">
+                    <h6>
+                      Analysts project 32% upside for Coinbase stock despite...
+                    </h6>
+                    <p>
+                      Coinbase is adding another $500 million to its investment
+                      in a ...
+                    </p>
+                    <div class="d-flex flex-row cardDetails">
+                      <span class="news-cat">Finbold</span>
+                      <span class="news-time">&nbsp; &nbsp; . 4 min ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 newsCol"
+              data-aos="flip-down"
+              data-aos-duration="2000"
+              data-aos-easing="ease-out-cubic"
+            >
+              <div class="news-card">
+                <div class="row cardRow gx-3">
+                  <div class="col-12 col-md-3 cardCol1">
+                    <img
+                      src="assets/images/pic1.png"
+                      alt="Blog 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-12 col-md-9 cardCol2">
+                    <h6>
+                      Analysts project 32% upside for Coinbase stock despite...
+                    </h6>
+                    <p>
+                      Coinbase is adding another $500 million to its investment
+                      in a ...
+                    </p>
+                    <div class="d-flex flex-row cardDetails">
+                      <span class="news-cat">Finbold</span>
+                      <span class="news-time">&nbsp; &nbsp; . 4 min ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="readMore-container">
+            <button class="btn primary-button readMore">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription -->
+    <div class="subscription-section">
+      <div class="secContainer">
+        <div class="row subscriptionRow d-flex align-items-center">
+          <div
+            class="col-12 col-md-6 subscriptionCol1"
+            data-aos="fade-right"
+            data-aos-duration="1300"
+          >
+            <h2>Subcribe To Get Crypto News Everyday</h2>
+            <div
+              class="d-flex flex-row flex-wrap align-items-center form row gx-3"
+            >
+              <div class="col-12 col-xl-8">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="col-12 col-xl-4">
+                <button class="btn primary-button">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 subscriptionCol2"
+            data-aos="fade-left"
+            data-aos-duration="1300"
+          >
+            <img
+              src="assets/images/header-image.png"
+              alt="Subscription"
+              class="img-fluid circularImg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <div class="footer-section">
+      <div class="secContainer">
+        <div class="footer-content">
+          <div class="row footerRow">
+            <div class="col-12 col-md-6 footerCol1">
+              <a class="navbar-brand" href="#"
+                >NFT <span class="brand-special">Marina</span>
+              </a>
+              <p>Get started your journey today</p>
+              <div class="social">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://web.facebook.com/" target="_blank">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-2 footerListCol">
+              <h6>About Us</h6>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-2 footerListCol">
+              <h6>Products</h6>
+              <ul>
+                <li><a href="#">Mobile App</a></li>
+                <li><a href="#">Converter</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-2 footerListCol">
+              <h6>Support</h6>
+              <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Submit A Request</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="copyright">
+            Copyright © 2022 NFT Marina. All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--  Javascript cdn-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  JQuery cdn-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome link-->
+    <script
+      src="https://kit.fontawesome.com/8441000675.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
